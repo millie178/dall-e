@@ -33,9 +33,12 @@ const Home = () => {
           'Content-Type': 'application/json',
         },
       });
+      
+      // console.log(response.json())
 
       if (response.ok) {
         const result = await response.json();
+        
         setAllPosts(result.data.reverse());
       }
 

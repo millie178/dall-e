@@ -19,6 +19,7 @@ router.route('/').get(async (req, res) => {
     res.setHeader("Access-Control-Allow-Origin", "*")
     const posts = await Post.find({});
 
+    console.log('get')
 
     res.status(200).json({ success: true, data: posts})
   } catch (error) {
@@ -30,16 +31,12 @@ router.route('/').post(async (req, res) => {
   try {
     const { name, prompt, photo } = req.body;
     const photoUrl = await cloudinary.uploader.upload(photo);
-    
-    console.log('here1');
 
     const newPost = await Post.create({
       name,
       prompt,
       photo: photoUrl.url,
     });
-
-    console.log('here2');
 
     res.status(200).json({ success: true, data: newPost });
   } catch (err) {

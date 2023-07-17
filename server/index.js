@@ -12,7 +12,9 @@ dotenv.config();
 
 // initialize express application
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: '*'
+}));
 
 
 // add middleware

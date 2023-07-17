@@ -55,9 +55,11 @@ const CreatePost = () => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({...form})
+          // body: JSON.stringify(form) 也是错
         })
 
         await response.json();
+        alert('Success')
         navigate('/');
       } catch (error) {
         alert(error)
