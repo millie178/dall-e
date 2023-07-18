@@ -55,11 +55,11 @@ const CreatePost = () => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({...form})
-          // body: JSON.stringify(form) 也是错
+          // body: JSON.stringify(form) ❌
         })
 
         await response.json();
-        alert('Success')
+
         navigate('/');
       } catch (error) {
         alert(error)
@@ -85,14 +85,14 @@ const CreatePost = () => {
   return (
     <section className='max-w-7xl mx-auto'>
       <div>
-        <h1 className='font-extrabold text-[#222328] text-[32px]'>Create</h1>
-        <p className='mt-2 text-[#666e75] text-[16px] max-w[500px]'>Create imagitive and visually stunning images through DALL-E AI and share them with the community</p>
+        <h1 className='font-extrabold text-[#222328] text-[32px]'>Create AI Images</h1>
+        <p className='mt-2 text-[#666e75] text-[16px] max-w[500px]'>Create AI images and share them with the AI image lover community</p>
       </div>
 
       <form className='mt-16 max-w-3xl' onSubmit={handleSubmit}>
         <div className='flex flex-col gap-5'>
           <FormField 
-            labelName="Your name"
+            labelName="Name"
             type='text'
             name='name'
             placeholder='John Doe'
@@ -103,7 +103,7 @@ const CreatePost = () => {
             labelName="Prompt"
             type="text"
             name="prompt"
-            placeholder="An Impressionist oil painting of sunflowers in a purple vase…"
+            placeholder="A flower driving a spacecraft at full speed..."
             value={form.prompt}
             handleChange={handleChange}
             isSurpriseMe
@@ -137,7 +137,7 @@ const CreatePost = () => {
           <button
             type='button'
             onClick={generateImage}
-            className='text-white bg-green-700 font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center'
+            className='text-white bg-green-700 font-medium rounded-md text-sm w-full px-5 py-2.5 text-center'
           >
             {generatingImg ? 'Generating' : 'Generate'}
           </button>
@@ -145,13 +145,13 @@ const CreatePost = () => {
 
         <div className='mt-10'>
           <p className='mt-2 text-[#666e75] text-[14px]'>
-            Once you have created the image you want, you can share it with others in the community 
+            Go ahead and share it with the AI image lovers community.
           </p>
           <button
             type='submit'
-            className='mt-3 text-white bg-[#6469ff] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center'
+            className='mt-3 text-white bg-[#6469ff] font-medium rounded-md text-sm w-full px-5 py-2.5 text-center'
           >
-            {loading ? 'Sharing' : 'Share with the community'}
+            {loading ? 'Sharing...' : 'Click to Share'}
           </button>
         </div>
       </form>
