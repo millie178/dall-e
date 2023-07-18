@@ -85,8 +85,8 @@ const CreatePost = () => {
   return (
     <section className='max-w-7xl mx-auto'>
       <div>
-        <h1 className='font-extrabold text-[#222328] text-[32px]'>Create AI Images</h1>
-        <p className='mt-2 text-[#666e75] text-[16px] max-w[500px]'>Create AI images and share them with the AI image lover community</p>
+        <h1 className='font-extrabold text-[#79a5da] text-[32px]'>Create AI Images</h1>
+        <p className='mt-2 text-[#79a5da] text-[16px] max-w[500px]'>Create AI images and share them with the AI image lover community</p>
       </div>
 
       <form className='mt-16 max-w-3xl' onSubmit={handleSubmit}>
@@ -95,7 +95,7 @@ const CreatePost = () => {
             labelName="Name"
             type='text'
             name='name'
-            placeholder='John Doe'
+            placeholder='Jane Doe'
             value={form.name} //what is form.name? is it the useState
             handleChange={handleChange}
           />
@@ -144,7 +144,7 @@ const CreatePost = () => {
         </div>
 
         <div className='mt-10'>
-          <p className='mt-2 text-[#666e75] text-[14px]'>
+          <p className='mt-2 text-[#79a5da] text-[14px]'>
             Go ahead and share it with the AI image lovers community.
           </p>
           <button

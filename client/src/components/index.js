@@ -5,6 +5,6 @@ import Loader from "./Loader"
 export {
   Card,
   FormField,
-  Loader
+  Loader,
 }
 
