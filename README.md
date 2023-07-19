@@ -8,7 +8,7 @@
   ```npm run dev``` - to run the application in the client folder  
   ```npm start``` - to run the application in the server folder  
 ## Technologies used
-  MongoDB -
+  MongoDB - store user and corresponding image information in JSON strings. 
   ```
   {
     "name":"Jane Doe",
@@ -16,6 +16,6 @@
     "photo":"http://res.cloudinary.com/xyz.png"
   }
   ```
-  Express.js -
-  React.js -
-  Node.js -
+  Express.js - Node.js framework  
+  React.js - Javascript library  
+  Node.js - backend JavaScript runtime environment  
