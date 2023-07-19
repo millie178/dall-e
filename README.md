@@ -7,10 +7,10 @@
   ```git clone``` the repository  
   ```npm run dev``` - to run the application in the client folder  
   ```npm start``` - to run the application in the server folder  
-## Technologies used
-  Cloudinary - store user uploaded AI images  
-  [OpenAi API](https://platform.openai.com/docs/api-reference/images/create) - generate AI images   
-  MongoDB - store user and corresponding image urls in JSON strings. 
+## Technologies
+  [Cloudinary](https://cloudinary.com/) - store user-uploaded AI images  
+  [OpenAi API v1](https://platform.openai.com/docs/api-reference/images/create) - generate AI images   
+  [MongoDB](https://www.mongodb.com/atlas/database) - store user and corresponding image URLs in JSON strings. 
   ```
   {
     "name":"Jane Doe",
@@ -18,6 +18,8 @@
     "photo":"http://res.cloudinary.com/xyz.png"
   }
   ```
-  Express.js - Node.js framework  
-  React.js - Javascript library  
-  Node.js - backend JavaScript runtime environment  
+  Tailwindcss^3.3.2
+  React^18.2.0
+  Vite^4.3.9
+  Node^18.15.0
+## 
