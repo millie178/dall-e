@@ -7,3 +7,15 @@
   ```git clone``` the repository  
   ```npm run dev``` - to run the application in the client folder  
   ```npm start``` - to run the application in the server folder  
+## Technologies used
+  MongoDB -
+  ```
+  {
+    "name":"aifan",
+    "prompt":"A photo of a white fur monster standing in a purple room",
+    "photo":"http://res.cloudinary.com/dttksmpbl/image/upload/v1689646270/qixos5dxzx0psbznylwz.png"
+  }
+  ```
+  Express.js -
+  React.js -
+  Node.js -
