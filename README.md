@@ -9,6 +9,7 @@
   ```npm start``` - to run the application in the server folder  
 ## Technologies used
   Cloudinary - store user uploaded AI images  
+  [OpenAi API](https://platform.openai.com/docs/api-reference/images/create) - generate AI images   
   MongoDB - store user and corresponding image urls in JSON strings. 
   ```
   {
