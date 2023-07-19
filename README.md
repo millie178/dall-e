@@ -8,7 +8,8 @@
   ```npm run dev``` - to run the application in the client folder  
   ```npm start``` - to run the application in the server folder  
 ## Technologies used
-  MongoDB - store user and corresponding image information in JSON strings. 
+  Cloudinary - store user uploaded AI images  
+  MongoDB - store user and corresponding image urls in JSON strings. 
   ```
   {
     "name":"Jane Doe",
