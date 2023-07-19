@@ -18,8 +18,8 @@
     "photo":"http://res.cloudinary.com/xyz.png"
   }
   ```
-  Tailwindcss^3.3.2
-  React^18.2.0
-  Vite^4.3.9
-  Node^18.15.0
+  Tailwindcss^3.3.2  
+  React^18.2.0  
+  Vite^4.3.9  
+  Node^18.15.0  
 ## 
