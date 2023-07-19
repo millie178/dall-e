@@ -11,9 +11,9 @@
   MongoDB -
   ```
   {
-    "name":"aifan",
-    "prompt":"A photo of a white fur monster standing in a purple room",
-    "photo":"http://res.cloudinary.com/dttksmpbl/image/upload/v1689646270/qixos5dxzx0psbznylwz.png"
+    "name":"Jane Doe",
+    "prompt":"A photo of a sunflower enjoying sunshine swinging left and right",
+    "photo":"http://res.cloudinary.com/xyz.png"
   }
   ```
   Express.js -
